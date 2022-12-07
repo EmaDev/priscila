@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/priscila/static/css/main.e1bf7759.css",
+    "main.js": "/priscila/static/js/main.1ce431b3.js",
+    "index.html": "/priscila/index.html",
+    "main.e1bf7759.css.map": "/priscila/static/css/main.e1bf7759.css.map",
+    "main.1ce431b3.js.map": "/priscila/static/js/main.1ce431b3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e1bf7759.css",
+    "static/js/main.1ce431b3.js"
+  ]
+}
