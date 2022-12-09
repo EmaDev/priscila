@@ -5,14 +5,14 @@ import styled from 'styled-components';
 
 const Contenedor = styled.header`
    width: 100%;
-   height: 85vh;
+   height: 99vh;
 `;
 
 const Contenido = styled.div`
    z-index: 1;
    margin:auto;
    width: 100%;
-   height: 85vh;
+   height: 99vh;
    max-height: 100vh;
    display: flex;
    position:relative;
