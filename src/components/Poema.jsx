@@ -27,7 +27,7 @@ export const Poema = () => {
             <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', margin: 'auto', alignItems: 'center' }}>
                 <Texto>Es 9 de diciembre nuestro segundo mes de novios,
                     me alegra tanto estar juntos a vos, aunque tuvimos muchas dudas con
-                    nuestra relación yo nunca dude en mi amor por vos.
+                    nuestra relación yo nunca dude de mi amor por vos.
                     Me siento tan afortunado que me hayas elegido.
                     Sos lo más hermoso que me pasó en la vida.</Texto>
                 <Texto>TE AMOU</Texto>

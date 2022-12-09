@@ -11,26 +11,28 @@ const Contenedor = styled.header`
 const Contenido = styled.div`
    z-index: 1;
    margin:auto;
-   width: 85%;
-   height: 95vh;
+   width: 100%;
+   height: 100vh;
    display: flex;
+   position:relative;
    flex-direction: column;
    align-items: center;
    justify-content:center;
+   overflow: hidden;
 `;
 const TextoUno = styled.h2`
   margin:0;
-  font-size: 32px;
+  font-size: 34px;
   color: #fff;
   text-transform: uppercase;
   text-align:center;
   font-family: 'Signika', sans-serif;
-  font-weight: 500;
+  font-weight: 700;
 `;
 
 const TeAmo = styled.h1`
   margin: 0;
-  font-size: 64px;
+  font-size: 72px;
   text-transform: uppercase;
   font-weigth: 700;
   color: #fff;
@@ -40,11 +42,11 @@ const TeAmo = styled.h1`
 
 const TextoDos = styled.h2` 
   margin:5px;
-  font-size: 32px;
+  font-size: 34px;
   color: #8edede;
   text-transform: uppercase;
   font-family: 'Signika', sans-serif;
-  font-weight: 500;
+  font-weight: 700;
   text-align:center;
 `;
 
@@ -238,12 +240,15 @@ export const Header = () => {
         }}
       />
       <Contenido>
+        <div style={{width: '90%', maxWidth: '500px', margin: 'auto', textAlign: 'center'}}>
         <TextoUno>Feliz segundo mes</TextoUno>
         <TextoDos>Priscilita de mi vida</TextoDos>
         <TeAmo>Te amo</TeAmo>
         <TextoDos>Te amo mucho, muchisimo</TextoDos>
+        <br/>
+        </div>
         <img src={require('../img/iconos/gatos.png')}
-          style={{ position: 'absolute', width: '300px',
+          style={{ position: 'absolute', width: '285px',
           right: '-10px', bottom: 0
           }}
         />
