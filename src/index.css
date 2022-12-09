@@ -6,6 +6,33 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-family: 'Raleway', sans-serif;
+  background-color: rgb(240, 158, 244);
+}
+
+.swiper {
+  width: 300px;
+  height: 300px;
+  padding: 50px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+}
+
+.poemaHeader{
+  width: 100%;
+  min-height: 100vh;
+  background: rgb(251, 251, 155) url('../public/jazmin.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 
