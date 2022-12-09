@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/priscila/static/css/main.956afb41.css",
-    "main.js": "/priscila/static/js/main.fc8045a1.js",
+    "main.js": "/priscila/static/js/main.10188918.js",
     "static/media/ntvg.mp3": "/priscila/static/media/ntvg.9a33d600b845f4c6dd48.mp3",
     "static/media/3.jpg": "/priscila/static/media/3.6f78dd6038de757c323b.jpg",
     "static/media/13.jpg": "/priscila/static/media/13.9241eaa00dd745d3cf7d.jpg",
@@ -21,10 +21,10 @@
     "static/media/jazmin.png": "/priscila/static/media/jazmin.ad2975743eb59ab8bbde.png",
     "index.html": "/priscila/index.html",
     "main.956afb41.css.map": "/priscila/static/css/main.956afb41.css.map",
-    "main.fc8045a1.js.map": "/priscila/static/js/main.fc8045a1.js.map"
+    "main.10188918.js.map": "/priscila/static/js/main.10188918.js.map"
   },
   "entrypoints": [
     "static/css/main.956afb41.css",
-    "static/js/main.fc8045a1.js"
+    "static/js/main.10188918.js"
   ]
 }

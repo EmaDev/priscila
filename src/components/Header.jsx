@@ -5,14 +5,15 @@ import styled from 'styled-components';
 
 const Contenedor = styled.header`
    width: 100%;
-   height: 100vh;
+   min-height: 100vh;
+   max-height: 100vh;
 `;
 
 const Contenido = styled.div`
    z-index: 1;
    margin:auto;
    width: 100%;
-   height: 100vh;
+   max-height: 100vh;
    display: flex;
    position:relative;
    flex-direction: column;
@@ -245,7 +246,7 @@ export const Header = () => {
         <TextoDos>Priscilita de mi vida</TextoDos>
         <TeAmo>Te amo</TeAmo>
         <TextoDos>Te amo mucho, muchisimo</TextoDos>
-        <br/><br/>
+        <br/>
         </div>
         <img src={require('../img/iconos/gatos.png')}
           style={{ position: 'absolute', width: '285px',
