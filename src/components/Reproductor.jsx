@@ -18,28 +18,28 @@ export const Reproductor = () => {
     const audioRef = useRef(null);
     const pausar = () => {
         const audio = audioRef.current;
-        audio.play();
-        setAudioActivo(true);
+        audio.pause();
+        setAudioActivo(false);
 
     }
     const resproducir = () => {
         const audio = audioRef.current;
-        audio.pause();
-        setAudioActivo(false);
+        audio.play();
+        setAudioActivo(true);
     }
     return (
        <>
         <AudioContenedor>
             {(audioActivo) ? 
-            <div onClick={resproducir} style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
-                <CgPlayPause fontSize={'70px'} />
-                <p style={{fontWeight: 'bold'}}>Escuchar</p>
-            </div> 
-            :
             <div onClick={pausar} style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
-                <CgPlayButton fontSize={'70px'}/>
+                <CgPlayPause fontSize={'70px'}/>
                 <p style={{fontWeight: 'bold'}}>Pausar</p>
             </div>
+            :
+            <div onClick={resproducir} style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
+                <CgPlayButton fontSize={'70px'} />
+                <p style={{fontWeight: 'bold'}}>Escuchar</p>
+            </div> 
             }
             
         </AudioContenedor>
