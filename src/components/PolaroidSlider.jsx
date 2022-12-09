@@ -11,24 +11,57 @@ import "swiper/css/navigation";
 // import required modules
 import { EffectFlip, Pagination, Navigation } from "swiper";
 import { Polaroid } from "./Polaroid";
+import {GiJasmine} from 'react-icons/gi';
+import {BsSuitHeartFill} from 'react-icons/bs';
 
 
 const Contenedor = styled.section`
   width: 100%;
   height: 100vh;
-  background-color: #ecc1c1;
+  background: rgb(255,157,180); 
+  background: linear-gradient(180deg, rgba(255,157,180,1) 29%, rgba(255,157,254,1) 100%);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items:center;
   margin:auto;
   overflow: hidden;
+  .contenido{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+  }
+`;
+
+const Titulo = styled.h2`
+   font-size: 34px;
+   margin: 0;
+   padding: 0;
+   color: #fff;
+`;
+
+const Iconos = styled.div`
+  margin: 10px auto;
+  margin-bottom: -20px;
+  display: flex;
+  gap: 15px;
+  font-size: 22px;
 `;
 export const PolaroidSlider = () => {
 
     return (
         <Contenedor>
-            <div className="contentido">
+            <div className="contenido">
+            <Titulo>Mi amorcito</Titulo>
+            <Iconos>
+                <GiJasmine color="#f0e58f"/>
+                <BsSuitHeartFill color="#e76e77"/>
+                <GiJasmine color="#f0e58f"/>
+                <BsSuitHeartFill color="#e76e77"/>
+                <GiJasmine color="#f0e58f"/>
+            </Iconos>
+            <div></div>
                 <Swiper
                     effect={"flip"}
                     grabCursor={true}
@@ -81,6 +114,13 @@ export const PolaroidSlider = () => {
                     </SwiperSlide>
                 </Swiper>
             </div>
+            <Iconos style={{margin: '40px'}}>
+                <GiJasmine color="#f0e58f"/>
+                <BsSuitHeartFill color="#e76e77"/>
+                <GiJasmine color="#f0e58f"/>
+                <BsSuitHeartFill color="#e76e77"/>
+                <GiJasmine color="#f0e58f"/>
+            </Iconos>
         </Contenedor>
     );
 }

@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { CuentaRegresiva } from './CuentaRegresiva';
 import {BsFillSuitHeartFill} from 'react-icons/bs';
+import Swal from 'sweetalert2';
 
 const Contenedor = styled.div`
    width: 100vw;
@@ -53,7 +54,36 @@ const Corazones = styled.div`
     margin: 0 10px;
   }
 `;
-export const Bloqueado = () => {
+
+const Button = styled.button`
+    display: block;
+    width: 60%;
+    padding: 8px;
+    margin: 10px auto;
+    font-size: 16px;
+    background-color: #e298f5;
+    border-style: none;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.6);
+    border-radius: 6px;
+    font-weight: bold;
+
+    &:hover{
+      background-color: #c37cd5;
+    }
+`;
+export const Bloqueado = ({setBloqueo}) => {
+
+  const ingresar = () => {
+   const actual = new Date();
+   if(actual.getDate() === 9){
+    setBloqueo(false);
+   }else{
+    return Swal.fire({
+      icon: 'error',
+      title: 'No se puede ingresar en este momento',
+    })
+   }
+  }
   return (
     <Contenedor>
       <Alerta>
@@ -67,6 +97,7 @@ export const Bloqueado = () => {
           <BsFillSuitHeartFill className='corazon'/>
           <BsFillSuitHeartFill className='corazon'/>
         </Corazones>
+        <Button onClick={ingresar}>Ingresar</Button>
       </Alerta>
     </Contenedor>
   )

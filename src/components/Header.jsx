@@ -6,7 +6,46 @@ import styled from 'styled-components';
 const Contenedor = styled.header`
    width: 100%;
    height: 100vh;
+`;
+
+const Contenido = styled.div`
    z-index: 1;
+   margin:auto;
+   width: 85%;
+   height: 95vh;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content:center;
+`;
+const TextoUno = styled.h2`
+  margin:0;
+  font-size: 32px;
+  color: #fff;
+  text-transform: uppercase;
+  text-align:center;
+  font-family: 'Signika', sans-serif;
+  font-weight: 500;
+`;
+
+const TeAmo = styled.h1`
+  margin: 0;
+  font-size: 64px;
+  text-transform: uppercase;
+  font-weigth: 700;
+  color: #fff;
+  font-family: 'Signika', sans-serif;
+  font-weight: 700;
+`;
+
+const TextoDos = styled.h2` 
+  margin:5px;
+  font-size: 32px;
+  color: #8edede;
+  text-transform: uppercase;
+  font-family: 'Signika', sans-serif;
+  font-weight: 500;
+  text-align:center;
 `;
 
 export const Header = () => {
@@ -16,7 +55,7 @@ export const Header = () => {
   }, []);
 
   const particlesLoaded = useCallback(async container => {
-    await console.log(container);
+    //await console.log(container);
   }, []);
 
   return (
@@ -151,7 +190,7 @@ export const Header = () => {
               },
               "image": [
                 {
-                  "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Love_Heart_symbol.svg/1125px-Love_Heart_symbol.svg.png",
+                  "src": require('../img/corazon.png'),
                   "width": 32,
                   "height": 32
                 },
@@ -190,7 +229,7 @@ export const Header = () => {
             "url": ""
           },
           "background": {
-            "color": "#fd9898",
+            "color": "#625775",
             "image": "",
             "position": "50% 50%",
             "repeat": "no-repeat",
@@ -198,6 +237,17 @@ export const Header = () => {
           }
         }}
       />
+      <Contenido>
+        <TextoUno>Feliz segundo mes</TextoUno>
+        <TextoDos>Priscilita de mi vida</TextoDos>
+        <TeAmo>Te amo</TeAmo>
+        <TextoDos>Te amo mucho, muchisimo</TextoDos>
+        <img src={require('../img/iconos/gatos.png')}
+          style={{ position: 'absolute', width: '300px',
+          right: '-10px', bottom: 0
+          }}
+        />
+      </Contenido>
     </Contenedor>
   );
 }

@@ -26,12 +26,12 @@ export const Poema = () => {
         <Contenedor className='poemaHeader'>
             <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', margin: 'auto', alignItems: 'center' }}>
                 <Texto>Es 9 de diciembre nuestro segundo mes de novios,
-                    me alegro tanto estar juntos a vos, aunque tuvimos muchas dudas con
-                    nuestra relación, yo nunca dude en mi amor por vos.
+                    me alegra tanto estar juntos a vos, aunque tuvimos muchas dudas con
+                    nuestra relación yo nunca dude en mi amor por vos.
                     Me siento tan afortunado que me hayas elegido.
                     Sos lo más hermoso que me pasó en la vida.</Texto>
                 <Texto>TE AMOU</Texto>
-                <Texto>Se que soy pésimo para escribir, por eso te dejo esta canción que explica mis sentimientos.</Texto>
+                <Texto>Se que soy pésimo para escribir, por eso te dejo esta canción que explica un poco mis sentimientos.</Texto>
                 <Reproductor />
             </div>
         </Contenedor>

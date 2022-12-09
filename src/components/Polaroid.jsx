@@ -8,7 +8,7 @@ const Contenedor = styled.div`
 
 const Tarjeta = styled.div`
   width: 100%;
-  height: 380px;
+  height: 390px;
   background-color: #fff;
   margin: 10px;
   margin: auto;
@@ -21,8 +21,8 @@ const Tarjeta = styled.div`
 
 const TarjetaContenido = styled.div`
    margin:auto;
-   width: 90%;
-   height: 80%;
+   width: 92%;
+   height: 82%;
    background-color: #e1e1e1;
    border-radius: 1px solid rgba(0,0,0,0.3);
    margin-top: 20px;

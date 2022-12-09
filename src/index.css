@@ -10,8 +10,8 @@ body {
 }
 
 .swiper {
-  width: 300px;
-  height: 300px;
+  width: 320px;
+  height: 336px;
   padding: 50px;
 }
 
@@ -30,7 +30,7 @@ body {
 .poemaHeader{
   width: 100%;
   min-height: 100vh;
-  background: rgb(251, 251, 155) url('../public/jazmin.jpg');
+  background: rgb(251, 251, 155) url('../public/jazmin.png');
   background-repeat: no-repeat;
   background-size: cover;
 }

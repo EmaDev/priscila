@@ -1,12 +1,14 @@
 {
   "files": {
-    "main.css": "/priscila/static/css/main.a2dc2557.css",
-    "main.js": "/priscila/static/js/main.0cfd7e36.js",
+    "main.css": "/priscila/static/css/main.2e765570.css",
+    "main.js": "/priscila/static/js/main.09a8e919.js",
+    "static/media/ntvg.mp3": "/priscila/static/media/ntvg.9a33d600b845f4c6dd48.mp3",
     "static/media/3.jpg": "/priscila/static/media/3.6f78dd6038de757c323b.jpg",
     "static/media/13.jpg": "/priscila/static/media/13.9241eaa00dd745d3cf7d.jpg",
     "static/media/6.jpg": "/priscila/static/media/6.78038613e41a257cf047.jpg",
     "static/media/9.jpg": "/priscila/static/media/9.259738d37f7f48da7e27.jpg",
     "static/media/7.jpg": "/priscila/static/media/7.1ef914d7462783b66a86.jpg",
+    "static/media/gatos.png": "/priscila/static/media/gatos.8b671626511e7106539e.png",
     "static/media/2.jpg": "/priscila/static/media/2.f6058bf085547f45324b.jpg",
     "static/media/5.jpg": "/priscila/static/media/5.ed400107775adc0521f9.jpg",
     "static/media/4.jpg": "/priscila/static/media/4.ecee60b9da9b31c05c2e.jpg",
@@ -16,13 +18,13 @@
     "static/media/1.jpg": "/priscila/static/media/1.702405b335e93e9bc27c.jpg",
     "static/media/14.jpg": "/priscila/static/media/14.86e8fcb27d99081b34c4.jpg",
     "static/media/12.jpg": "/priscila/static/media/12.ac908ea941170ff630e6.jpg",
-    "static/media/jazmin.jpg": "/priscila/static/media/jazmin.203530ad6e5c88e8b9a8.jpg",
+    "static/media/jazmin.png": "/priscila/static/media/jazmin.ad2975743eb59ab8bbde.png",
     "index.html": "/priscila/index.html",
-    "main.a2dc2557.css.map": "/priscila/static/css/main.a2dc2557.css.map",
-    "main.0cfd7e36.js.map": "/priscila/static/js/main.0cfd7e36.js.map"
+    "main.2e765570.css.map": "/priscila/static/css/main.2e765570.css.map",
+    "main.09a8e919.js.map": "/priscila/static/js/main.09a8e919.js.map"
   },
   "entrypoints": [
-    "static/css/main.a2dc2557.css",
-    "static/js/main.0cfd7e36.js"
+    "static/css/main.2e765570.css",
+    "static/js/main.09a8e919.js"
   ]
 }

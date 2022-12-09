@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
-import {HiLockClosed} from 'react-icons/hi';
+import { HiLockClosed } from 'react-icons/hi';
 
 const Numero = styled.p`
     font-family: 'Bebas Neue', cursive;
@@ -34,13 +34,24 @@ export const CuentaRegresiva = () => {
     const [timerState, setTimerState] = useState({ dias: '', horas: '', minutos: '', segundos: '' });
 
     useEffect(() => {
-        let iteracion = 1000;
-        const intervalo = setInterval(() => {
-            setTimer("Dec 09 2022 00:00:00 GMT-0300");
-            if (iteracion === 1000) {
-                iteracion = 60000;
-            }
-        }, iteracion);
+        const actual = new Date();
+        if (actual.getDate() === 9) {
+            //clearInterval(intervalo);
+            setTimerState({
+                segundos: "00",
+                minutos: "00",
+                horas: "00",
+                dias: "0",
+            })
+        } else {
+            let iteracion = 1000;
+            const intervalo = setInterval(() => {
+                setTimer("Dec 09 2022 00:00:00 GMT-0300");
+                if (iteracion === 1000) {
+                    iteracion = 60000;
+                }
+            }, iteracion);
+        }
     }, []);
 
     const setTimer = (fecha) => {
@@ -56,7 +67,7 @@ export const CuentaRegresiva = () => {
     }
     return (
         <div>
-            <TextBloqueo><HiLockClosed className='candado'/>podes desbloquearlo en</TextBloqueo>
+            <TextBloqueo><HiLockClosed className='candado' />podes desbloquearlo en</TextBloqueo>
             <div style={{ display: 'flex', margin: 'auto', alignItems: 'center', justifyContent: 'center' }}>
                 <Numero>{timerState.dias}<Separador>:</Separador></Numero>
                 <Numero>{timerState.horas}<Separador>:</Separador></Numero>
