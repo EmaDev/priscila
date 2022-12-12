@@ -35,7 +35,7 @@ export const CuentaRegresiva = () => {
 
     useEffect(() => {
         const actual = new Date();
-        if (actual.getDate() === 9) {
+        if (actual.getDate() >= 9) {
             //clearInterval(intervalo);
             setTimerState({
                 segundos: "00",

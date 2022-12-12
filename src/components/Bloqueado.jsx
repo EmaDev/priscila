@@ -75,7 +75,7 @@ export const Bloqueado = ({setBloqueo}) => {
 
   const ingresar = () => {
    const actual = new Date();
-   if(actual.getDate() === 9){
+   if(actual.getDate() >= 9){
     setBloqueo(false);
    }else{
     return Swal.fire({
